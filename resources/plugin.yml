@@ -1,0 +1,9 @@
+name: PurgePearls
+main: net.bghddev.pearls.purgepearls.PurgePearls
+author: PurgeDevelopment
+version: 0.6
+commands:
+  purgepearls:
+    description: PurgePearls
+    aliases: [purgepearl, talipearl,pp]
+  purgeservices:

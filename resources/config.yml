@@ -1,0 +1,67 @@
+#     \__________________________________________________________________________________________________/
+#      |                                                                                                |
+#      |                                                                                                |
+#      |                                     [ PurgePearls by PurgeDevelopment  ]                       |
+#      |                                                                                                |
+#      |________________________________________________________________________________________________|
+
+# Enter the license given to you through MC-Market dms ( to obtain it join https://discord.gg/8CxbdCu )
+license: ""
+
+#     \__________________________________________________________________________________________________/
+#      |                                                                                                |
+#      |                                                                                                |
+#      |                                     [ Pearl Methods  ]                                         |
+#      |                                                                                                |
+#      |________________________________________________________________________________________________|
+
+PearlMethods:
+  cPearl: true #  Allows you to pearl through open fences etc
+  Chest-Pearl: true # Allows you to pearls through chests
+  EndPortal-Pearl: true # Allows you to pearls through EndPortals
+  Bed-Pearl: true # Allows you to pearls through Beds
+  Piston-Pearl: true # Allows you to pearls through activated pistons
+  TalibanPearl:
+    Slabs: true # Allows you to pearls through slabs
+    Stairs: true # Allows you to pearls through stairs
+    Block-if-block-in-front: true # Blocks the pearl if there is a block in front of the person
+
+#     \__________________________________________________________________________________________________/
+#      |                                                                                                |
+#      |                                                                                                |
+#      |                                     [ Pearl Settings  ]                                        |
+#      |                                                                                                |
+#      |________________________________________________________________________________________________|
+
+Settings:
+  TalibanPearlTP: false
+  Refund-If-CritBlock: false # Refunds the pearl if there is a crit block where it lands
+  PearlRefund: true # Enables/Disables pearl refunds
+  Spigot-1-7: true # Toggle whether or not you use a 1.7 spigot
+  Anti-Glitch: true # Prevents people from glitching in blocks and suffocating
+
+#     \__________________________________________________________________________________________________/
+#      |                                                                                                |
+#      |                                                                                                |
+#      |                                     [ Pearl Timer  ]                                           |
+#      |                                                                                                |
+#      |________________________________________________________________________________________________|
+
+Timer:
+  Time: 16 # How many seconds is the pearl cooldown
+  Send-Message: true # Should there be a message sent for when the player is on cooldown
+  Message: '&cYou cannot use this for another &l%time%&c.' # Message to be sent if the player tries to throw a pearl while on cooldown ( placeholder: %time% for the left time )
+
+#     \__________________________________________________________________________________________________/
+#      |                                                                                                |
+#      |                                                                                                |
+#      |                                     [ Pearl Refund  ]                                          |
+#      |                                                                                                |
+#      |________________________________________________________________________________________________|
+
+PearlRefund:
+  PearlRefund-Message: true # Should there be a message for pearl refunding
+  Message: '&cInvalid Pearl' # Message shown when a pearl gets refunded
+  PearlRefund-Remove-Timer: true # Should the refund reset a players cooldown
+  PearlRefund-Command: true # Should you be able to remove the cooldown a player is on
+  Command: 'timer set EnderPearl %player% 0' # Command used for refunding the pearl ( placeholder: %player% )
